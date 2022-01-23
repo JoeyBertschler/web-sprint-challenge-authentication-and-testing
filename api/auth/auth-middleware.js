@@ -20,6 +20,8 @@ const checkUsernameExists = async (req, res, next) => {
   const exists = await findBy({ username }).first(); //check if username exists
   if (!exists) {
     res.status(401).json({ message: "username taken" }); //logic might be backwards, will check later if off
+    //is correct, but still confuses me. exists checks username is there, not exist should be true if username is not taken?
+    //I suppose it's the other way around
   } else {
     next();
   }
