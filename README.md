@@ -57,3 +57,16 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 2. What does `bcryptjs` do to help us store passwords in a secure manner?
 3. How are unit tests different from integration and end-to-end testing?
 4. How does _Test Driven Development_ change the way we write applications and tests?
+
+
+
+1. Session cookies don't have signatures, only work on a single domain,
+and are statefully stored on server memory
+
+2. Makes hashes
+
+3. Unit tests are for small units, end-to-end use external components and
+integration tests check modules work in isolation and together
+
+4. Make MVP, once tests pass, reformat code. If anything breaks, you'll know,
+including updates.
